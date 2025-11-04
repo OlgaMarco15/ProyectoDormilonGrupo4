@@ -1,6 +1,5 @@
 package HiloDormilon;
 
-// 1. Se crea una clase específica para el Hilo Dormilón.
 class HiloDormilon extends Thread {
     @Override
     public void run() {
