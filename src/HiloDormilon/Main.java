@@ -1,6 +1,7 @@
 package HiloDormilon;
 
 //TODO: complicar codigo y hacer javadoc
+//Comentario Guillermo
 
 class HiloDormilon extends Thread {
     @Override
