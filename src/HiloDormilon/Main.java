@@ -1,5 +1,7 @@
 package HiloDormilon;
 
+//TODO: complicar codigo y hacer javadoc
+
 class HiloDormilon extends Thread {
     @Override
     public void run() {
