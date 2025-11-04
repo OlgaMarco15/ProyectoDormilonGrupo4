@@ -25,15 +25,23 @@ class HiloDormilon extends Thread {
 public class Main {
     public static void main(String[] args) {
         try {
-
+            System.out.println("Iniciando hilo");
             Thread dormilon = new HiloDormilon();
-            dormilon.start();
+            System.out.println("Estado del hilo: " + dormilon.isAlive());
 
+            System.out.println("Ejecutando hilo");
+            dormilon.start();
+            System.out.println("Estado del hilo: " + dormilon.getState());
+
+            System.out.println("Durmiendo hilo");
             dormilon.sleep(2000);
             System.out.println("Estado del hilo: " + dormilon.getState());
 
+            System.out.println("Interrumpo el hilo");
             dormilon.interrupt();
+            System.out.println("Estado del hilo: " + dormilon.getState());
 
+            System.out.println("Se vuelve a dormir el hilo");
             dormilon.join();
             System.out.println("Estado del hilo: " + dormilon.getState());
 
