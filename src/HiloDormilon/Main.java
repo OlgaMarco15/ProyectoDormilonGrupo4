@@ -27,7 +27,7 @@ public class Main {
         try {
             System.out.println("Iniciando hilo");
             Thread dormilon = new HiloDormilon();
-            System.out.println("Estado del hilo: " + dormilon.isAlive());
+            System.out.println("Estado del hilo: " + dormilon.getState());
 
             System.out.println("Ejecutando hilo");
             dormilon.start();
